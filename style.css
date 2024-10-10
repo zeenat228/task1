@@ -1,18 +1,33 @@
+/* .main {
+    display: flex;
+    width: 100%;
+}
+.left {
+    float: left;
+    width: 60%;
+}
+
+.right {
+    float: right;
+    width: 39%;
+    margin-top: 10px;
+} */
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10px;
 }
 
+/* for left side  */
 .container {
     display: flex;
-    gap: 80px;
-    /* align-items: center; */
+    gap: 60px;
 }
 
 .header nav ul {
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 10px;
 }
 
 .header nav ul li a {
@@ -31,12 +46,12 @@
     background-image: url(./images/hero-image.jpg);
     /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; */
+    background-size: cover; */
     position: absolute;
     color: white;
     border: 2px solid rgb(209, 207, 207);
     border-radius: 20px;
+    position: relative;
 }
 
 .hero-content h4 {
@@ -48,9 +63,64 @@
     color: purple;
 }
 
-.features {
+.photo-container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    margin-top: 30px;
+    gap: 60px;
+    margin-bottom: 120px;
 }
+
+.images {
+    position: absolute;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.feature {
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.feature button {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.test {
+    position: relative;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 700px;
+    text-align: center;
+    border: 2px solid rgb(230, 229, 229);
+    border-radius: 15px;
+}
+
+.test1 {
+    padding-top: 70px;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.cards {
+    position: absolute;
+}
+.card {
+    position: relative;
+    color: white;
+    text-align: center;
+    
+}
+
+.card2 {
+    margin-right: 10px;
+}
+
 
