@@ -23,13 +23,14 @@
 /* header section  */
 .container {
     display: flex;
-    gap: 60px;
+    justify-content: space-between;
 }
 
 .header nav ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 30px;
+    margin-right: 20px;
 }
 
 .header nav ul li a {
@@ -45,7 +46,7 @@
 .hero {
     padding: 10px 0;
     text-align: left;
-    width: 60%;
+    width: 100%;
     background-image: url(./images/hero-image.jpg);
     /* background-position: center;
     background-repeat: no-repeat;
@@ -97,8 +98,8 @@
     position: relative;
     margin-top: 20px;
     background-color: whitesmoke;
-    height: 250px;
-    width: 700px;
+    height: 350px;
+    width: auto;
     text-align: center;
     border: 2px solid rgb(230, 229, 229);
     border-radius: 15px;
@@ -110,92 +111,57 @@
 
 /* card section */
 
+.card-p {
+    background-color: rgb(254, 234, 212);
+    border: 2px solid rgb(198, 195, 195);
+    height:300px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 50px;
+}
 .card-container {
     display: flex;
-    margin-top: 20px;
-    gap: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 .cards {
     position: absolute;
+    border-radius: 15px;
 }
 .card {
     position: relative;
     color: white;
     text-align: center;
+    padding-top: 180px;
+    font-weight: bolder;
+
     
 }
 
 .card2 {
-    margin-right: 10px;
+    margin-right: 100px;
 }
 
-/* registration section  */
-
-.registration {
-    background-color: black;
-    border: 2px solid white;
-    margin-top: 20px;
-    width: 60%;
-}
-
-.msg {
-    float: left;
-    color: white;
+.card3 {
+    margin-right: 100px; 
 }
 
 
-
-/* rough section  */
-/* Instructors Section */
-.instructors {
-    background-color: #fff;
-    padding: 50px;
-    text-align: center;
-}
-
-.instructors h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.instructor-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.instructor {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-}
-
-.instructor img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.instructor p {
-    font-size: 18px;
-    padding: 10px;
-}
 
 /* Workshop Section */
 .workshops {
     background-color: #222;
-    color: #fff;
-    padding: 50px;
+    color: white;
+    padding: 50px 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
 .workshop {
-    background-color: #333;
+    background-image: url(./images/workshop.jpeg);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -208,11 +174,11 @@
 }
 
 .register-btn {
-    background-color: #ff6f61;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 10px;
     display: inline-block;
 }
@@ -221,13 +187,12 @@
 .faq-container {
     background-color: #fff;
     padding: 20px 10px;
-    /* text-align: left; */
 }
 
 .faq h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .faq details {
